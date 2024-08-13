@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Kanit', sans-serif;
+}
+
+
+body {
+    font-family: 'Kanit', sans-serif;
+    margin: 0;
+    margin-top: 40px;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    background: url(/Picture/furniture-bg.jpg);
+}
+
+p {
+    margin-top: 30px;
+    font-size: medium;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 110%;
+    max-width: 1000px;
+    background-color:rgba(255, 235, 205, 0.774);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.form-container, .image-container {
+    padding: 20px;
+    flex: 1;
+}
+
+.image-container {
+    background: url('/Picture/furniture-bg.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.image-container div {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form-container button:hover {
+    background-color: #333;
+}
+
+.form-container .login-link {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.terms {
+    width: 80vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+
+.inputuser {
+    width: 80%;
+    height: 60%;
+}
+
+.terms input[type="checkbox"] {
+    margin-right: 1px;
+    width: 6%;
+    
+    
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column; /* ทำให้เนื้อหาเรียงกันในแนวตั้ง */
+        width: 100%; /* ให้ container กว้างเต็มที่ */
+    }
+
+    .form-container, .image-container {
+        width: 100%; /* ให้แต่ละ container กว้างเต็มที่ */
+        padding: 20px; /* เพิ่ม padding เพื่อให้มีช่องว่าง */
+    }
+
+    .image-container {
+        display: none; /* ซ่อนรูปภาพหากต้องการพื้นที่ให้ฟอร์มใหญ่ขึ้น */
+    }
+
+    .logo-google {
+        font-size: 18px; /* ปรับขนาดตัวอักษรให้เล็กลง */
+    }
+}
+
+
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+    display: block;
+}
+
+

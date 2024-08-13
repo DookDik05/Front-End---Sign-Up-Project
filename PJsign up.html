@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign up.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Sign up Project</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="logo-google">
+                <h1>สร้างบัญชีของคุณ</h1>
+                <button id="submit"><i class='bx bxl-steam'></i>ล็อกอินด้วย Steam</button>
+            </div>
+            <p> or </p>
+            <hr>
+            <form id="form" action="/">
+                <div class="inputuser">
+                    <label for="name">ชื่อ</label>
+                    <input type="text" id="name" name="ชื่อ" placeholder="ชื่อ">
+                    <span class="error-message" id="name-error"></span>
+
+                    <label for="lastname">นามสกุล</label>
+                    <input type="text" id="lastname" name="นามสกุล" placeholder="นามสกุล">
+                    <span class="error-message" id="lastname-error"></span>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="Email" placeholder="อีเมล์">
+                    <span class="error-message" id="email-error"></span>
+
+                    <label for="password">รหัสผ่าน</label>
+                    <input type="password" id="password" name="Password" placeholder="รหัสผ่าน">
+                    <span class="error-message" id="password-error"></span>
+
+                    <div class="terms">
+                        <input type="checkbox" id="terms" name="Terms" required>
+                        <label for="terms">ฉันยอมรับข้อกำหนด นโยบายความเป็นส่วนตัว และค่าธรรมเนียมทั้งหมด</label>
+                        <span class="error-message" id="terms-error"></span>
+                    </div>
+                </div>
+                <button type="submit">Sign up</button>
+            </form>
+            <a href="#" class="log-link">มีบัญชีอยู่แล้ว? เข้าสู่ระบบ</a>
+        </div>
+        <div class="image-container">
+            <div>
+                <h1>ค้นพบเฟอร์นิเจอร์ที่ดีที่สุดสำหรับบ้านของคุณ</h1>
+                <p>แนวทางปฏิบัติของเราคือการออกแบบสภาพแวดล้อมที่สมบูรณ์แบบสำหรับอาคาร ชุมชน และสถานที่ที่ยอดเยี่ยมในสถานการณ์พิเศษ</p>
+                <p>รับประกัน 100% | ส่งฟรีกาฬสินธุ์</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="Sign up.js"></script>
+
+</body>
+</html>
